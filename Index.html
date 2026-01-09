@@ -3,12 +3,50 @@
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-Tech Cyber Cafe - Professional Digital Services in Kenya</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- Primary Meta Tags -->
+  <title>E-Tech Cyber Cafe - Professional Digital Services & Computer Training in Kenya</title>
+  <meta name="title" content="E-Tech Cyber Cafe - Professional Digital Services & Computer Training in Kenya">
+  <meta name="description" content="E-Tech Cyber Cafe offers professional digital services including high-speed internet, printing, document services, and comprehensive computer training courses in Kenya. Get certified in Microsoft Office, Graphic Design, Web Development, and more.">
+  <meta name="keywords" content="cyber cafe Kenya, computer training Nairobi, digital services Kenya, printing services, computer courses, Microsoft Office training, graphic design courses, web development Kenya">
+  <meta name="author" content="E-Tech Cyber Cafe">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="7 days">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://etechcyber.com/">
+  <meta property="og:title" content="E-Tech Cyber Cafe - Professional Digital Services & Computer Training">
+  <meta property="og:description" content="Your one-stop destination for internet services, printing, document typing, and comprehensive computer courses in Kenya.">
+  <meta property="og:image" content="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://etechcyber.com/">
+  <meta property="twitter:title" content="E-Tech Cyber Cafe - Professional Digital Services & Computer Training">
+  <meta property="twitter:description" content="Your one-stop destination for internet services, printing, document typing, and comprehensive computer courses in Kenya.">
+  <meta property="twitter:image" content="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+  
+  <!-- Preconnect for Performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+  <link rel="dns-prefetch" href="https://images.pexels.com">
+  
+  <!-- Stylesheets -->
   <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800;900&amp;family=Sora:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#0891b2">
  </head>
  <body class="h-full w-full overflow-auto m-0 bg-gray-50"><!-- Professional Loading Screen -->
   <div id="loading-screen">
@@ -17,8 +55,9 @@
     E-TECH CYBER CAFE
    </div>
   </div>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   <div class="w-full min-h-full content-wrapper"><!-- Professional Navigation -->
-   <nav class="w-full fixed top-0 z-50 nav-professional">
+   <nav class="w-full fixed top-0 z-50 nav-professional" role="navigation" aria-label="Main navigation">
     <div class="max-w-7xl mx-auto px-6 py-4">
      <div class="flex justify-between items-center"><!-- Logo -->
       <div class="flex items-center space-x-3">
@@ -27,55 +66,67 @@
         </svg>
        </div>
        <div>
-        <h1 class="text-xl font-bold text-gray-900">E-Tech Cyber</h1>
+        <div class="text-xl font-bold text-gray-900">E-Tech Cyber</div>
         <p class="text-xs text-gray-500 font-medium">Digital Solutions</p>
        </div>
-      </div><!-- Desktop Navigation -->
-      <div class="hidden md:flex items-center space-x-8"><a href="#services" class="nav-link text-gray-700 font-medium hover:text-blue-600">Services</a> <a href="#courses" class="nav-link text-gray-700 font-medium hover:text-blue-600">Courses</a> <a href="#contact" class="nav-link text-gray-700 font-medium hover:text-blue-600">Contact</a> <a href="#contact" class="btn-primary text-white px-6 py-2.5 rounded-lg font-semibold"> Get Started </a>
-      </div><!-- Mobile Menu Button --> <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none">
-       <svg id="menu-icon" class="w-7 h-7" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-       </svg>
-       <svg id="close-icon" class="w-7 h-7 hidden" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-       </svg></button>
-     </div><!-- Mobile Menu -->
-     <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 mobile-menu">
-      <div class="flex flex-col space-y-4"><a href="#services" class="text-gray-700 font-medium hover:text-blue-600 transition-colors py-2">Services</a> <a href="#courses" class="text-gray-700 font-medium hover:text-blue-600 transition-colors py-2">Courses</a> <a href="#contact" class="text-gray-700 font-medium hover:text-blue-600 transition-colors py-2">Contact</a> <a href="#contact" class="btn-primary text-white px-6 py-3 rounded-lg font-semibold text-center"> Get Started </a>
+      </div>      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center space-x-8" role="navigation" aria-label="Main navigation">
+        <a href="#services" class="nav-link text-gray-700 font-medium hover:text-blue-600" aria-label="View our services">Services</a>
+        <a href="#courses" class="nav-link text-gray-700 font-medium hover:text-blue-600" aria-label="View our courses">Courses</a>
+        <a href="#contact" class="nav-link text-gray-700 font-medium hover:text-blue-600" aria-label="Contact us">Contact</a>
+        <a href="#contact" class="btn-primary text-white px-6 py-2.5 rounded-lg font-semibold" aria-label="Get started with our services">Get Started</a>
+      </nav>
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none focus:ring-2 focus:ring-cyan-600 rounded p-2" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg id="menu-icon" class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg id="close-icon" class="w-7 h-7 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+     </div>     <!-- Mobile Menu -->
+     <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 mobile-menu" role="navigation" aria-label="Mobile navigation">
+      <div class="flex flex-col space-y-4">
+        <a href="#services" class="text-gray-700 font-medium hover:text-blue-600 transition-colors py-2" aria-label="View our services">Services</a>
+        <a href="#courses" class="text-gray-700 font-medium hover:text-blue-600 transition-colors py-2" aria-label="View our courses">Courses</a>
+        <a href="#contact" class="text-gray-700 font-medium hover:text-blue-600 transition-colors py-2" aria-label="Contact us">Contact</a>
+        <a href="#contact" class="btn-primary text-white px-6 py-3 rounded-lg font-semibold text-center" aria-label="Get started with our services">Get Started</a>
       </div>
      </div>
     </div>
-   </nav><!-- Spacer for fixed nav -->
-   <div class="h-20"></div><!-- Hero Section -->
-   <section class="w-full relative py-24 px-6 overflow-hidden section-professional">
-    <div class="absolute inset-0"><img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1920" alt="Modern cyber cafe workspace" class="w-full h-full object-cover" onerror="this.src=''; this.style.display='none'; this.parentElement.classList.add('gradient-hero');">
+   </nav>   <!-- Spacer for fixed nav -->
+   <div class="h-20"></div>
+   <!-- Hero Section -->
+   <section id="main-content" class="w-full relative py-24 px-6 overflow-hidden section-professional" aria-label="Hero section">
+    <div class="absolute inset-0"><img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1920" alt="Modern cyber cafe workspace with computers and professional setup" class="w-full h-full object-cover" loading="eager" fetchpriority="high" onerror="this.src=''; this.style.display='none'; this.parentElement.classList.add('gradient-hero');">
      <div class="absolute inset-0 bg-gradient-to-br from-slate-900/95 via-slate-800/90 to-cyan-900/85"></div>
     </div>
     <div class="max-w-6xl mx-auto text-center relative z-10">
      <div class="flex justify-center mb-6 fade-in fade-in-delay-1">
-      <div class="relative"><img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=200" alt="Business owner" class="w-28 h-28 rounded-full border-4 border-white shadow-2xl object-cover" onerror="this.style.display='none';">
+      <div class="relative"><img src="assests/kk.jpg" alt="E-Tech Cyber Cafe business owner portrait" class="w-28 h-28 rounded-full border-4 border-white shadow-2xl object-cover" loading="eager" onerror="this.style.display='none';">
        <div class="absolute -bottom-1 -right-1 bg-green-500 w-7 h-7 rounded-full border-4 border-white"></div>
       </div>
      </div>
      <div class="inline-block mb-6 fade-in fade-in-delay-2"><span class="badge-professional">🇰🇪 Trusted in Kenya</span>
      </div>
-     <h2 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white leading-tight fade-in fade-in-delay-3">Professional Cyber Services<br><span class="text-cyan-400">&amp; Computer Training</span></h2>
+     <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white leading-tight fade-in fade-in-delay-3">Professional Cyber Services<br><span class="text-cyan-400">&amp; Computer Training</span></h1>
      <p class="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed fade-in fade-in-delay-4">Your one-stop destination for internet services, printing, document typing, and comprehensive computer courses</p>
      <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in fade-in-delay-5"><a href="#courses" class="btn-primary text-white px-8 py-4 rounded-lg font-semibold text-lg inline-block"> Explore Courses </a> <a href="#services" class="bg-white text-cyan-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-all inline-block shadow-lg"> Our Services </a>
      </div>
     </div>
-   </section><!-- Services Section -->
-   <section id="services" class="w-full px-6 bg-white section-professional">
+   </section>   <!-- Services Section -->
+   <section id="services" class="w-full px-6 bg-white section-professional" aria-labelledby="services-heading">
     <div class="max-w-7xl mx-auto">
      <div class="text-center mb-16"><span class="text-cyan-600 font-semibold text-sm uppercase tracking-wider">What We Offer</span>
-      <h3 class="text-4xl md:text-5xl font-bold text-gray-900 mt-3 mb-4">Our Services</h3>
+      <h2 id="services-heading" class="text-4xl md:text-5xl font-bold text-gray-900 mt-3 mb-4">Our Services</h2>
       <p class="text-gray-600 text-lg max-w-2xl mx-auto">Comprehensive digital solutions for all your business and personal needs</p>
      </div>
      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"><!-- Service 1 -->
       <div class="card-professional rounded-2xl overflow-hidden scale-in">
-       <div class="image-overlay h-48"><img src="https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="High-speed internet" class="w-full h-full object-cover" onerror="this.src=''; this.style.display='none';">
+       <div class="image-overlay h-48"><img src="https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="High-speed internet connection with modern computers" class="w-full h-full object-cover" loading="lazy" onerror="this.src=''; this.style.display='none';">
        </div>
        <div class="p-8">
         <div class="service-icon-wrapper w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
-         <svg class="w-8 h-8 text-cyan-600" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+         <svg class="w-8 h-8 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
          </svg>
         </div>
         <h4 class="text-xl font-bold text-gray-900 mb-3">High-Speed Internet</h4>
@@ -83,11 +134,11 @@
        </div>
       </div><!-- Service 2 -->
       <div class="card-professional rounded-2xl overflow-hidden scale-in" style="animation-delay: 0.1s;">
-       <div class="image-overlay h-48"><img src="https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Printing services" class="w-full h-full object-cover" onerror="this.src=''; this.style.display='none';">
+       <div class="image-overlay h-48"><img src="https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Professional printing and scanning equipment" class="w-full h-full object-cover" loading="lazy" onerror="this.src=''; this.style.display='none';">
        </div>
        <div class="p-8">
         <div class="service-icon-wrapper w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
-         <svg class="w-8 h-8 text-cyan-600" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+         <svg class="w-8 h-8 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
          </svg>
         </div>
         <h4 class="text-xl font-bold text-gray-900 mb-3">Printing &amp; Scanning</h4>
@@ -95,11 +146,11 @@
        </div>
       </div><!-- Service 3 -->
       <div class="card-professional rounded-2xl overflow-hidden scale-in" style="animation-delay: 0.2s;">
-       <div class="image-overlay h-48"><img src="https://images.pexels.com/photos/5952647/pexels-photo-5952647.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Document typing" class="w-full h-full object-cover" onerror="this.src=''; this.style.display='none';">
+       <div class="image-overlay h-48"><img src="https://images.pexels.com/photos/5952647/pexels-photo-5952647.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Professional document typing and preparation services" class="w-full h-full object-cover" loading="lazy" onerror="this.src=''; this.style.display='none';">
        </div>
        <div class="p-8">
         <div class="service-icon-wrapper w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
-         <svg class="w-8 h-8 text-cyan-600" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+         <svg class="w-8 h-8 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
          </svg>
         </div>
         <h4 class="text-xl font-bold text-gray-900 mb-3">Document Services</h4>
@@ -107,11 +158,11 @@
        </div>
       </div><!-- Service 4 -->
       <div class="card-professional rounded-2xl overflow-hidden scale-in" style="animation-delay: 0.3s;">
-       <div class="image-overlay h-48"><img src="https://images.pexels.com/photos/4559592/pexels-photo-4559592.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Email services" class="w-full h-full object-cover" onerror="this.src=''; this.style.display='none';">
+       <div class="image-overlay h-48"><img src="https://images.pexels.com/photos/4559592/pexels-photo-4559592.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Email management and professional correspondence services" class="w-full h-full object-cover" loading="lazy" onerror="this.src=''; this.style.display='none';">
        </div>
        <div class="p-8">
         <div class="service-icon-wrapper w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
-         <svg class="w-8 h-8 text-cyan-600" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+         <svg class="w-8 h-8 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
          </svg>
         </div>
         <h4 class="text-xl font-bold text-gray-900 mb-3">Email Management</h4>
@@ -119,11 +170,11 @@
        </div>
       </div><!-- Service 5 -->
       <div class="card-professional rounded-2xl overflow-hidden scale-in" style="animation-delay: 0.4s;">
-       <div class="image-overlay h-48"><img src="https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Mobile money services" class="w-full h-full object-cover" onerror="this.src=''; this.style.display='none';">
+       <div class="image-overlay h-48"><img src="https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Mobile money services including M-Pesa transactions" class="w-full h-full object-cover" loading="lazy" onerror="this.src=''; this.style.display='none';">
        </div>
        <div class="p-8">
         <div class="service-icon-wrapper w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
-         <svg class="w-8 h-8 text-cyan-600" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+         <svg class="w-8 h-8 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
          </svg>
         </div>
         <h4 class="text-xl font-bold text-gray-900 mb-3">Mobile Money</h4>
@@ -131,7 +182,7 @@
        </div>
       </div><!-- Service 6 -->
       <div class="card-professional rounded-2xl overflow-hidden scale-in" style="animation-delay: 0.5s;">
-       <div class="image-overlay h-48"><img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Business support" class="w-full h-full object-cover" onerror="this.src=''; this.style.display='none';">
+       <div class="image-overlay h-48"><img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Business support and online registration services" class="w-full h-full object-cover" loading="lazy" onerror="this.src=''; this.style.display='none';">
        </div>
        <div class="p-8">
         <div class="service-icon-wrapper w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
@@ -144,15 +195,21 @@
       </div>
      </div>
     </div>
-   </section><!-- Courses Section -->
-   <section id="courses" class="w-full px-6 bg-gray-50 section-professional">
+   </section>   <!-- Courses Section -->
+   <section id="courses" class="w-full px-6 bg-gray-50 section-professional" aria-labelledby="courses-heading">
     <div class="max-w-7xl mx-auto">
      <div class="text-center mb-16"><span class="text-cyan-600 font-semibold text-sm uppercase tracking-wider">Skill Development</span>
-      <h3 class="text-4xl md:text-5xl font-bold text-gray-900 mt-3 mb-4">Computer Training Packages</h3>
+      <h2 id="courses-heading" class="text-4xl md:text-5xl font-bold text-gray-900 mt-3 mb-4">Computer Training Packages</h2>
       <p class="text-gray-600 text-lg max-w-2xl mx-auto">Industry-standard courses with certification to boost your career</p>
      </div>
      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"><!-- Course 1 -->
-      <div class="card-professional rounded-2xl shadow-sm overflow-hidden scale-in">
+      <div class="card-professional course-card rounded-2xl shadow-sm overflow-hidden scale-in cursor-pointer" data-course="Basic Computer" data-price="KSh 8,000" role="button" tabindex="0" aria-label="Click to inquire about Basic Computer course">
+       <div class="course-email-cta">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+        </svg>
+        <span>Click to Send Inquiry</span>
+       </div>
        <div class="gradient-accent p-6">
         <div class="flex justify-between items-start mb-2">
          <h4 class="text-2xl font-bold text-white">Basic Computer</h4><span class="bg-white/20 text-white px-3 py-1 rounded-full text-xs font-semibold">Popular</span>
@@ -179,7 +236,13 @@
         </ul>
        </div>
       </div><!-- Course 2 -->
-      <div class="card-professional rounded-2xl shadow-sm overflow-hidden scale-in" style="animation-delay: 0.1s;">
+      <div class="card-professional course-card rounded-2xl shadow-sm overflow-hidden scale-in cursor-pointer" style="animation-delay: 0.1s;" data-course="Office Suite" data-price="KSh 12,000" role="button" tabindex="0" aria-label="Click to inquire about Office Suite course">
+       <div class="course-email-cta">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+        </svg>
+        <span>Click to Send Inquiry</span>
+       </div>
        <div class="gradient-accent p-6">
         <div class="flex justify-between items-start mb-2">
          <h4 class="text-2xl font-bold text-white">Office Suite</h4>
@@ -206,7 +269,13 @@
         </ul>
        </div>
       </div><!-- Course 3 -->
-      <div class="card-professional rounded-2xl shadow-sm overflow-hidden scale-in" style="animation-delay: 0.2s;">
+      <div class="card-professional course-card rounded-2xl shadow-sm overflow-hidden scale-in cursor-pointer" style="animation-delay: 0.2s;" data-course="Graphic Design" data-price="KSh 15,000" role="button" tabindex="0" aria-label="Click to inquire about Graphic Design course">
+       <div class="course-email-cta">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+        </svg>
+        <span>Click to Send Inquiry</span>
+       </div>
        <div class="gradient-accent p-6">
         <div class="flex justify-between items-start mb-2">
          <h4 class="text-2xl font-bold text-white">Graphic Design</h4>
@@ -233,7 +302,13 @@
         </ul>
        </div>
       </div><!-- Course 4 -->
-      <div class="card-professional rounded-2xl shadow-sm overflow-hidden scale-in" style="animation-delay: 0.3s;">
+      <div class="card-professional course-card rounded-2xl shadow-sm overflow-hidden scale-in cursor-pointer" style="animation-delay: 0.3s;" data-course="Web Development" data-price="KSh 20,000" role="button" tabindex="0" aria-label="Click to inquire about Web Development course">
+       <div class="course-email-cta">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+        </svg>
+        <span>Click to Send Inquiry</span>
+       </div>
        <div class="gradient-accent p-6">
         <div class="flex justify-between items-start mb-2">
          <h4 class="text-2xl font-bold text-white">Web Development</h4><span class="bg-white/20 text-white px-3 py-1 rounded-full text-xs font-semibold">In Demand</span>
@@ -260,7 +335,13 @@
         </ul>
        </div>
       </div><!-- Course 5 -->
-      <div class="card-professional rounded-2xl shadow-sm overflow-hidden scale-in" style="animation-delay: 0.4s;">
+      <div class="card-professional course-card rounded-2xl shadow-sm overflow-hidden scale-in cursor-pointer" style="animation-delay: 0.4s;" data-course="Accounting" data-price="KSh 10,000" role="button" tabindex="0" aria-label="Click to inquire about Accounting course">
+       <div class="course-email-cta">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+        </svg>
+        <span>Click to Send Inquiry</span>
+       </div>
        <div class="gradient-accent p-6">
         <div class="flex justify-between items-start mb-2">
          <h4 class="text-2xl font-bold text-white">Accounting</h4>
@@ -287,7 +368,13 @@
         </ul>
        </div>
       </div><!-- Course 6 -->
-      <div class="card-professional rounded-2xl shadow-sm overflow-hidden scale-in" style="animation-delay: 0.5s;">
+      <div class="card-professional course-card rounded-2xl shadow-sm overflow-hidden scale-in cursor-pointer" style="animation-delay: 0.5s;" data-course="Digital Marketing" data-price="KSh 12,000" role="button" tabindex="0" aria-label="Click to inquire about Digital Marketing course">
+       <div class="course-email-cta">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+        </svg>
+        <span>Click to Send Inquiry</span>
+       </div>
        <div class="gradient-accent p-6">
         <div class="flex justify-between items-start mb-2">
          <h4 class="text-2xl font-bold text-white">Digital Marketing</h4>
@@ -316,11 +403,11 @@
       </div>
      </div>
     </div>
-   </section><!-- Contact Section -->
-   <section id="contact" class="w-full px-6 bg-white section-professional">
+   </section>   <!-- Contact Section -->
+   <section id="contact" class="w-full px-6 bg-white section-professional" aria-labelledby="contact-heading">
     <div class="max-w-5xl mx-auto">
      <div class="text-center mb-16"><span class="text-cyan-600 font-semibold text-sm uppercase tracking-wider">Get In Touch</span>
-      <h3 class="text-4xl md:text-5xl font-bold text-gray-900 mt-3 mb-4">Visit Us Today</h3>
+      <h2 id="contact-heading" class="text-4xl md:text-5xl font-bold text-gray-900 mt-3 mb-4">Visit Us Today</h2>
       <p class="text-gray-600 text-lg max-w-2xl mx-auto">Ready to start your digital journey? We're here to help</p>
      </div>
      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
@@ -330,15 +417,15 @@
         </svg>
        </div>
        <h4 class="font-bold text-gray-900 mb-2 text-lg">Phone</h4>
-       <p class="text-gray-600">0727 732 157</p>
+       <a href="tel:+254727732157" class="text-gray-600 hover:text-cyan-600 transition-colors" aria-label="Call us at 0727 732 157">0727 732 157</a>
       </div>
       <div class="text-center p-8 rounded-2xl border border-gray-200 hover:border-cyan-200 transition-all card-professional">
        <div class="w-16 h-16 gradient-accent rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
-        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
         </svg>
        </div>
        <h4 class="font-bold text-gray-900 mb-2 text-lg">Email</h4>
-       <p class="text-gray-600 text-sm">edisonkipkemoi319@gmail.com</p>
+       <a href="mailto:edisonkipkemoi319@gmail.com" class="text-gray-600 text-sm hover:text-cyan-600 transition-colors break-all" aria-label="Send us an email">edisonkipkemoi319@gmail.com</a>
       </div>
       <div class="text-center p-8 rounded-2xl border border-gray-200 hover:border-cyan-200 transition-all card-professional">
        <div class="w-16 h-16 gradient-accent rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
